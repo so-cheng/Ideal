@@ -1,5 +1,8 @@
 ﻿namespace Ideal.Ideal.Common.Enums
 {
+    /// <summary>
+    /// 数据操作方式
+    /// </summary>
     public enum DbFieldMode
     {
         /// <summary>
@@ -20,7 +23,7 @@
         NEVER_SAVE = 4,
         /// <summary>
         /// 主键
-        /// </summary>
-        PRIMARY_KEY = 5,
+        /// </summary>  
+        PRIMARY_KEY = 5,   
     }
 }

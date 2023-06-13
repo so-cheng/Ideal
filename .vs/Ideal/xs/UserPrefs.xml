@@ -1,0 +1,24 @@
+﻿<Properties GitUserInfo="UsingGIT">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Ideal.Common/Enums/DbFieldMode.cs">
+    <Files>
+      <File FileName="Ideal.Common/Enums/DbFieldMode.cs" Line="26" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Ideal" expanded="True" selected="True">
+            <Node name="Ideal" expanded="True">
+              <Node name="Ideal.Common" expanded="True">
+                <Node name="Enums" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>
