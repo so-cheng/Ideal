@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Rules>
+  <Rule Template="简单三层-业务层代码(多文件).cs" FileName="BLL_{TableName}.cs" FilePath="C:\b" />
+</Rules>

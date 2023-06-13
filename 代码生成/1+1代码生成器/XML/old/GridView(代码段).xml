@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configs>
+  <config desc="Store的名称" key="StoreID" value="Store1" />
+  <config desc="为Store创建刷新事件" key="HaveRefresh" value="true"/>
+  <config desc="忽略Store额外的字段" key="IgnoreExtraFields" value="true"/>
+  <config desc="GridPanel名称" key="GridPanelID" value="GridPanel1"/>
+  <config desc="GridPanel标题" key="Title" value="信息列表"/>
+  <config desc="添加条件过滤" key="AddFilters" value="true"/>
+  <config desc="添加分页" key="AddPagingToolbar" value="true"/>
+  <config desc="每页记录数" key="PageSize" value="20"/>
+</configs>

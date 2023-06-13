@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Rules> 
+  <Rule Template="Listdesigner.cs" FileName="{TableName}List.aspx.designer.cs" FilePath="C:\b\Web" />
+  <Rule Template="Listaspx.aspx" FileName="{TableName}List.aspx" FilePath="C:\b\Web" />
+  <Rule Template="Listaspx.cs" FileName="{TableName}List.aspx.cs" FilePath="C:\b\Web" />  
+
+</Rules>

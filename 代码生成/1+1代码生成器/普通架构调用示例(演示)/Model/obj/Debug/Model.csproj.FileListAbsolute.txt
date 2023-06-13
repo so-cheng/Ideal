@@ -1,0 +1,6 @@
+/Users/songcheng/Ideal/代码生成/1+1代码生成器/普通架构调用示例(演示)/Model/bin/Debug/Model.dll
+/Users/songcheng/Ideal/代码生成/1+1代码生成器/普通架构调用示例(演示)/Model/bin/Debug/Model.pdb
+/Users/songcheng/Ideal/代码生成/1+1代码生成器/普通架构调用示例(演示)/Model/obj/Debug/Model.csproj.AssemblyReference.cache
+/Users/songcheng/Ideal/代码生成/1+1代码生成器/普通架构调用示例(演示)/Model/obj/Debug/Model.csproj.CoreCompileInputs.cache
+/Users/songcheng/Ideal/代码生成/1+1代码生成器/普通架构调用示例(演示)/Model/obj/Debug/Model.dll
+/Users/songcheng/Ideal/代码生成/1+1代码生成器/普通架构调用示例(演示)/Model/obj/Debug/Model.pdb

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Rules>
+  <Rule Template="简单三层-业务层代码(多文件).cs" FileName="Bll_{TableName}.cs" FilePath="C:\b\BLL" />
+	<!--Rule Template="designer.cs" FileName="{TableName}Manage.aspx.designer.cs" FilePath="C:\b\Web" /> 
+	<Rule Template="简单三层-前台设计文件(多文件).cs" FileName="{TableName}Message.aspx.designer.cs" FilePath="C:\b\Web" />
+  <Rule Template="简单三层-页面前台代码(多文件).aspx" FileName="{TableName}Message.aspx" FilePath="C:\b\Web" />
+  <Rule Template="简单三层-页面后台代码(多文件).cs" FileName="{TableName}Message.aspx.cs" FilePath="C:\b\Web" /-->
+  <Rule Template="简单三层-模型层实体(多文件).cs" FileName="{TableName}.cs" FilePath="C:\b\Model" />
+</Rules>

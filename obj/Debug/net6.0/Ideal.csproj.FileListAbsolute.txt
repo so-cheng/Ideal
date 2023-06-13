@@ -1,0 +1,12 @@
+/Users/songcheng/Ideal/bin/Debug/net6.0/Ideal.deps.json
+/Users/songcheng/Ideal/bin/Debug/net6.0/Ideal.dll
+/Users/songcheng/Ideal/bin/Debug/net6.0/Ideal.pdb
+/Users/songcheng/Ideal/obj/Debug/net6.0/Ideal.csproj.AssemblyReference.cache
+/Users/songcheng/Ideal/obj/Debug/net6.0/Ideal.GeneratedMSBuildEditorConfig.editorconfig
+/Users/songcheng/Ideal/obj/Debug/net6.0/Ideal.AssemblyInfoInputs.cache
+/Users/songcheng/Ideal/obj/Debug/net6.0/Ideal.AssemblyInfo.cs
+/Users/songcheng/Ideal/obj/Debug/net6.0/Ideal.csproj.CoreCompileInputs.cache
+/Users/songcheng/Ideal/obj/Debug/net6.0/Ideal.dll
+/Users/songcheng/Ideal/obj/Debug/net6.0/refint/Ideal.dll
+/Users/songcheng/Ideal/obj/Debug/net6.0/Ideal.pdb
+/Users/songcheng/Ideal/obj/Debug/net6.0/ref/Ideal.dll

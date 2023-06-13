@@ -1,0 +1,98 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove=".gitattributes" />
+    <None Remove="代码生成\.DS_Store" />
+    <None Remove="代码生成\1+1代码生成器\.DS_Store" />
+    <None Remove="代码生成\1+1代码生成器\普通架构调用示例%28演示%29\.DS_Store" />
+    <None Remove="代码生成\1+1代码生成器\普通架构调用示例%28演示%29\UpgradeLog.XML" />
+    <None Remove="代码生成\1+1代码生成器\普通架构调用示例%28演示%29\Bll\obj\Debug\Bll.csproj.FileListAbsolute.txt" />
+    <None Remove="代码生成\1+1代码生成器\普通架构调用示例%28演示%29\Bll\obj\Debug\Bll.csproj.AssemblyReference.cache" />
+    <None Remove="代码生成\1+1代码生成器\普通架构调用示例%28演示%29\Bll\obj\Debug\Bll.csproj.CopyComplete" />
+    <None Remove="代码生成\1+1代码生成器\普通架构调用示例%28演示%29\Bll\obj\Debug\Bll.pdb" />
+    <None Remove="代码生成\1+1代码生成器\普通架构调用示例%28演示%29\Bll\obj\Debug\Bll.csproj.CoreCompileInputs.cache" />
+    <None Remove="代码生成\1+1代码生成器\普通架构调用示例%28演示%29\Bll\obj\Debug\Bll.dll" />
+    <None Remove="代码生成\1+1代码生成器\普通架构调用示例%28演示%29\Bll\bin\Debug\Bll.pdb" />
+    <None Remove="代码生成\1+1代码生成器\普通架构调用示例%28演示%29\Bll\bin\Debug\Model.dll" />
+    <None Remove="代码生成\1+1代码生成器\普通架构调用示例%28演示%29\Bll\bin\Debug\Bll.dll" />
+    <None Remove="代码生成\1+1代码生成器\普通架构调用示例%28演示%29\Bll\bin\Debug\Model.pdb" />
+    <None Remove="代码生成\1+1代码生成器\普通架构调用示例%28演示%29\Web\bin\Bll.pdb" />
+    <None Remove="代码生成\1+1代码生成器\普通架构调用示例%28演示%29\Web\bin\Model.dll" />
+    <None Remove="代码生成\1+1代码生成器\普通架构调用示例%28演示%29\Web\bin\Bll.dll" />
+    <None Remove="代码生成\1+1代码生成器\普通架构调用示例%28演示%29\Model\.DS_Store" />
+    <None Remove="代码生成\1+1代码生成器\普通架构调用示例%28演示%29\Model\obj\Debug\Model.csproj.FileListAbsolute.txt" />
+    <None Remove="代码生成\1+1代码生成器\普通架构调用示例%28演示%29\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache" />
+    <None Remove="代码生成\1+1代码生成器\普通架构调用示例%28演示%29\Model\obj\Debug\Model.csproj.AssemblyReference.cache" />
+    <None Remove="代码生成\1+1代码生成器\普通架构调用示例%28演示%29\Model\obj\Debug\Model.dll" />
+    <None Remove="代码生成\1+1代码生成器\普通架构调用示例%28演示%29\Model\obj\Debug\Model.pdb" />
+    <None Remove="代码生成\1+1代码生成器\普通架构调用示例%28演示%29\Model\bin\Debug\Model.dll" />
+    <None Remove="代码生成\1+1代码生成器\普通架构调用示例%28演示%29\Model\bin\Debug\Model.pdb" />
+    <None Remove="代码生成\1+1代码生成器\DBHelper.dll" />
+    <None Remove="代码生成\1+1代码生成器\Hxj.Data.dll" />
+    <None Remove="代码生成\1+1代码生成器\VelocityHelper.dll" />
+    <None Remove="代码生成\1+1代码生成器\XmlHelper.dll" />
+    <None Remove="代码生成\1+1代码生成器\icsharpcode.texteditor.dll" />
+    <None Remove="代码生成\1+1代码生成器\databaseconfig.xml" />
+    <None Remove="代码生成\1+1代码生成器\NVelocity.dll" />
+    <None Remove="代码生成\1+1代码生成器\CodeSmithFrm.exe" />
+    <None Remove="代码生成\1+1代码生成器\dbtype.xml" />
+    <None Remove="代码生成\1+1代码生成器\WeifenLuo.WinFormsUI.Docking.dll" />
+    <None Remove="代码生成\1+1代码生成器\XML\实体Model%28多文件%29.xml" />
+    <None Remove="代码生成\1+1代码生成器\XML\List页面规则%28多文件%29.xml" />
+    <None Remove="代码生成\1+1代码生成器\XML\Manage页面规则%28多文件%29.xml" />
+    <None Remove="代码生成\1+1代码生成器\XML\old\GridView%28代码段%29.xml" />
+    <None Remove="代码生成\1+1代码生成器\XML\old\Hxj实体生成%28单文件%29.xml" />
+    <None Remove="代码生成\1+1代码生成器\Rules\List页面规则.xml" />
+    <None Remove="代码生成\1+1代码生成器\Rules\业务层.xml" />
+    <None Remove="代码生成\1+1代码生成器\Rules\Manage页面规则.xml" />
+    <None Remove="代码生成\1+1代码生成器\Rules\实体Model-BLL-规则.xml" />
+    <None Remove="代码生成\1+1代码生成器\Templates\.DS_Store" />
+    <None Remove="代码生成\1+1代码生成器\Templates\old\简单三层-页面前台代码%28多文件%29.aspx" />
+    <None Remove="代码生成\1+1代码生成器\Templates\old\生成GridView%28代码段%29.aspx" />
+    <None Remove="代码生成\1+1代码生成器\普通架构调用示例%28演示%29\Web\Web.config" />
+    <None Remove="代码生成\1+1代码生成器\普通架构调用示例%28演示%29\Web\Default.aspx" />
+    <None Remove="代码生成\1+1代码生成器\普通架构调用示例%28演示%29\Web\obj\Debug\Web.csproj.CoreCompileInputs.cache" />
+    <None Remove="代码生成\1+1代码生成器\普通架构调用示例%28演示%29\Web\obj\Debug\Web.pdb" />
+    <None Remove="代码生成\1+1代码生成器\普通架构调用示例%28演示%29\Web\obj\Debug\Web.dll" />
+    <None Remove="代码生成\1+1代码生成器\普通架构调用示例%28演示%29\Web\obj\Debug\Web.csproj.CopyComplete" />
+    <None Remove="代码生成\1+1代码生成器\普通架构调用示例%28演示%29\Web\obj\Debug\Web.csproj.FileListAbsolute.txt" />
+    <None Remove="代码生成\1+1代码生成器\普通架构调用示例%28演示%29\Web\obj\Debug\Web.csproj.AssemblyReference.cache" />
+    <None Remove="代码生成\1+1代码生成器\普通架构调用示例%28演示%29\Web\bin\Web.pdb" />
+    <None Remove="代码生成\1+1代码生成器\普通架构调用示例%28演示%29\Web\bin\Web.dll" />
+    <None Remove="代码生成\1+1代码生成器\普通架构调用示例%28演示%29\Web\bin\Model.pdb" />
+    <None Remove="代码生成\Model\Ideal-Platform.pdb" />
+    <None Remove="代码生成\Model\Ideal-Platform.pdm" />
+    <None Remove="代码生成\Model\OA.pdm" />
+    <None Remove="代码生成\Model\Platform.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="StackExchange.Redis" Version="2.6.86" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="代码生成\1+1代码生成器\普通架构调用示例%28演示%29\Bll\Properties\AssemblyInfo.cs" />
+    <Compile Remove="代码生成\1+1代码生成器\普通架构调用示例%28演示%29\Model\Properties\AssemblyInfo.cs" />
+    <Compile Remove="代码生成\1+1代码生成器\Templates\Service.cs" />
+    <Compile Remove="代码生成\1+1代码生成器\Templates\接口文档.cs" />
+    <Compile Remove="代码生成\1+1代码生成器\Templates\SQL语句.cs" />
+    <Compile Remove="代码生成\1+1代码生成器\Templates\简单三层-Model%28多文件%29的副本.cs" />
+    <Compile Remove="代码生成\1+1代码生成器\Templates\DAO.cs" />
+    <Compile Remove="代码生成\1+1代码生成器\Templates\BLL.cs" />
+    <Compile Remove="代码生成\1+1代码生成器\Templates\简单三层-ViewModel%28多文件%29.cs" />
+    <Compile Remove="代码生成\1+1代码生成器\Templates\简单三层-Model%28多文件%29.cs" />
+    <Compile Remove="代码生成\1+1代码生成器\Templates\old\简单三层-前台设计文件%28多文件%29.cs" />
+    <Compile Remove="代码生成\1+1代码生成器\Templates\old\简单三层-页面后台代码%28多文件%29.cs" />
+    <Compile Remove="代码生成\1+1代码生成器\普通架构调用示例%28演示%29\Web\Default.aspx.cs" />
+    <Compile Remove="代码生成\1+1代码生成器\普通架构调用示例%28演示%29\Web\Default.aspx.designer.cs" />
+    <Compile Remove="代码生成\1+1代码生成器\普通架构调用示例%28演示%29\Web\Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+</Project>

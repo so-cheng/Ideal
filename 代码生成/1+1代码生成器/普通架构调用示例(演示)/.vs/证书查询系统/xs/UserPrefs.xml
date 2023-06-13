@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{81725EE7-EBF0-412D-9424-385491291090}|">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Web/Properties/AssemblyInfo.cs">
+    <Files>
+      <File FileName="../Templates/简单三层-Model(多文件).cs" Line="25" Column="2" />
+      <File FileName="Web/Web.config" Line="1" Column="1" />
+      <File FileName="Web/Default.aspx" Line="10" Column="35" />
+      <File FileName="Web/Properties/AssemblyInfo.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="证书查询系统" expanded="True">
+            <Node name="Bll" expanded="True" />
+            <Node name="Model" expanded="True" />
+            <Node name="Web" expanded="True">
+              <Node name="Properties" expanded="True">
+                <Node name="AssemblyInfo.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Web PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

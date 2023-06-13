@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Rules> 
+  <Rule Template="designer.cs" FileName="{TableName}Manage.aspx.designer.cs" FilePath="C:\b\Web" />
+  <Rule Template="aspx.aspx" FileName="{TableName}Manage.aspx" FilePath="C:\b\Web" />
+  <Rule Template="aspx.cs" FileName="{TableName}Manage.aspx.cs" FilePath="C:\b\Web" />  
+
+</Rules>

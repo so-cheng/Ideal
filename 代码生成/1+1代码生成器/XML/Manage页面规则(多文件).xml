@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configs>
+  <config desc="Web层-命名空间" key="webnamespace" value="WebUI" />
+  <config desc="Web层-类名前置" key="webclassnamestar" value="AdminM." />
+  <config desc="Web层-类名后置" key="webclassnameend" value="Manage" />
+  <config desc="Web层-StoreID" key="StoreID" value="ddlList"/>
+  <config desc="Web层-GridPaneID" key="GridPaneID" value="GvData"/>
+  <config desc="Web层-信息名称" key="InfoName" value=""/>
+  <config desc="Web层-添加列表条件过滤" key="AddFilters" value="true"/>
+  <config desc="Web层-列表每页记录数" key="PageSize" value="20"/>
+  <config desc="Web层-页面父类" key="basepage" value="PageBase"/>
+  <config desc="业务层-命名空间" key="bllnamespace" value="Bll" />
+  <config desc="业务层-类名前置" key="bllclassnamestar" value="Bll_"/>
+  <config desc="模型层-命名空间" key="modelnamespace" value="HModel" />
+  <config desc="模型层-类名前置" key="modelclassnamestar" value="" />
+</configs>
