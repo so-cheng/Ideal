@@ -45,3 +45,6 @@ obj/Ideal.csproj.nuget.dgspec.json
 obj/Ideal.csproj.nuget.g.props
 obj/project.assets.json
 obj/project.nuget.cache
+.vs/Ideal/v17/.futdcache.v2
+.vs/ProjectEvaluation/ideal.metadata.v7.bin
+.vs/ProjectEvaluation/ideal.projects.v7.bin
