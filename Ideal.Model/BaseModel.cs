@@ -60,16 +60,6 @@ namespace Ideal.Ideal.Model
             set { m_CreateTime = value; }
         }
 
-        private string m_UpdateTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
-        /// <summary>
-        /// 数据更新时间
-        /// </summary>
-        [DbFieldAttribute(DbFieldMode.ONLY_UPDATE)]
-        public string UpdateTime
-        {
-            get { return m_UpdateTime; }
-            set { m_UpdateTime = value; }
-        }
 
         private string m_Creator = "";
         /// <summary>
@@ -100,5 +90,8 @@ namespace Ideal.Ideal.Model
         /// </summary>
         [DbFieldAttribute(DbFieldMode.NEVER_SAVE)]
         public ExecuteType ExecuteType { get; set; }
+        [DbFieldAttribute(DbFieldMode.NEVER_SAVE)]
+        public string UserID { get; set; }
+
     }
 }

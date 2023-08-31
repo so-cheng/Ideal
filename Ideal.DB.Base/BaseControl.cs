@@ -13,12 +13,8 @@ namespace Ideal.Ideal.DB.Base
 {
     public static class BaseControl
     {
-        private static DbUtility dbHelper = null;
-
         public static string constr_str = "";
-        //public BaseControl()
-        //{
-        //}
+        private static DbUtility dbHelper = null;
         //public BaseControl(string constr_key)
         //{
         //    if (string.IsNullOrEmpty(constr_key))
@@ -398,10 +394,10 @@ namespace Ideal.Ideal.DB.Base
             where T : BaseModel, new()
         {
             StringBuilder sb = new StringBuilder();
+            StringBuilder fields = new StringBuilder();
             sb.Append("UPDATE ");
             tableName = tableName ?? t.Owner_DB_TableName;
             sb.Append(tableName);
-            t.UpdateTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
             string key = string.Empty;
             string value = string.Empty;
             foreach (PropertyInfo pro in t.GetType().GetProperties())
@@ -413,9 +409,11 @@ namespace Ideal.Ideal.DB.Base
                 {
                     key = getFieldNameByProperty(pro);
                     value = Filter.FilterInSQL(returnValue(pro, t));
-                    sb.AppendFormat(" SET {0} = {1}", key, value);
+
+                    //sb.AppendFormat(" SET {0} = {1}", key, value);
+                    sb.AppendFormat(" SET ", key, value);
                 }
-                if (attr == null || (attr.Mode == DbFieldMode.ALL_SAVE || attr.Mode == DbFieldMode.ONLY_UPDATE))
+                if (attr.Mode == DbFieldMode.ALL_SAVE || attr.Mode == DbFieldMode.ONLY_UPDATE)
                 {
                     string cvalue = Filter.FilterInSQL(returnValue(pro, t));
                     //if (value == null)
@@ -424,13 +422,12 @@ namespace Ideal.Ideal.DB.Base
                     //}
                     //else
                     //{
-                    sb.AppendFormat(",{0} = '{1}'", getFieldNameByProperty(pro).TrimStart(','), cvalue.TrimStart(','));
+                    fields.AppendFormat("{0} = '{1}',", getFieldNameByProperty(pro).TrimStart(','), cvalue.TrimStart(','));
                     //}
                 }
             }
-            StringBuilder fields = new StringBuilder();
             GetUpdateSQLPart(ref fields);
-            sb.AppendLine(fields.ToString());
+            sb.AppendLine(fields.ToString().TrimEnd(','));
             sb.AppendLine(string.Format(" WHERE {0}='{1}'", key, value));
             return sb.ToString();
         }
