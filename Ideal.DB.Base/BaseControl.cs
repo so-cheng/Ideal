@@ -378,7 +378,7 @@ namespace Ideal.Ideal.DB.Base
                 DbFieldAttribute attr = attrs.Length > 0 ? (DbFieldAttribute)attrs[0] : null;
                 if (attr.Mode == DbFieldMode.PRIMARY_KEY)
                 {
-                    sb.Append(string.Format(" where {1}='{0}'", getFieldNameByProperty(pro), Filter.FilterInSQL(returnValue(pro, t))));
+                    sb.Append(string.Format(" where {0}='{1}'", getFieldNameByProperty(pro), Filter.FilterInSQL(returnValue(pro, t))));
                 }
             }
             return sb.ToString();
