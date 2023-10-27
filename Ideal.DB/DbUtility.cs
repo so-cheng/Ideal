@@ -294,6 +294,13 @@ namespace Ideal.Ideal.DB
                             if (ds != null && ds.Tables.Count > 0)
                             {
                                 dt = ds.Tables[0];
+                                code = 20; 
+                                msg = "查询成功！";
+                            }
+                            else
+                            {
+                                code = 21;
+                                msg = "查询成功无数据！";
                             }
                         }
                         catch (Exception ex)
@@ -340,12 +347,18 @@ namespace Ideal.Ideal.DB
                             cmd.CommandText = sqlText;
                             cmd.CommandType = CommandType.Text;
                             da.Fill(ds);
-                            if (ds != null && ds.Tables.Count > 0)
+                            if (ds != null && ds.Tables[0].Rows.Count > 0)
                             {
                                 dt = ds.Tables[0];
+                                code = 20;
+                                msg = "查询成功！";
                             }
-                            code = 20;
-                            msg = "查询成功！";
+                            else
+                            {
+
+                                code = 22;
+                                msg = "查询成功无数据！";
+                            }
                         }
                         catch (Exception ex)
                         {
@@ -367,6 +380,7 @@ namespace Ideal.Ideal.DB
             }
             return dt;
         }
+
         #endregion
         #region 私有方法
         #endregion

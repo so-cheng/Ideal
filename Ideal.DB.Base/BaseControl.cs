@@ -116,13 +116,24 @@ namespace Ideal.Ideal.DB.Base
             sb.Append("ORDER BY RowNum");
 
             string sqlCount = string.Format("select count(1) from ({0}) as T", sql);
+            int page_start_index = (param.PageIndex - 1) * param.PageSize + 1;
+            int page_start_end = param.PageIndex * param.PageSize;
+            string sqlPage = "";
+            if (param.PageIndex == 1)
+            {
+                sqlPage = string.Format("select top {3} {2} from {0} where 1=1 {1} order by {4} {5}", body, param.SqlWhere, param.SqlColumn, param.PageSize, param.OrderField, param.OrderMethod == OrderMethod.ASC ? "ASC" : "DESC");
+            }
+            else
+            {
+                sqlPage = string.Format("select T1.* from (select row_number() over(order by {3} {4}) rownumber,T.* from ({0}) T ) T1 where rownumber between {1} and {2} ", sql, page_start_index, page_start_end, param.OrderField, param.OrderMethod == OrderMethod.ASC ? "ASC" : "DESC");
+            }
             DataTable rows = dbHelper.ExecuteScalar(sqlCount, out code, out msg);
             int count = 0;
             if (rows.Rows.Count > 0)
             {
                 count = int.Parse(rows.Rows[0][0].ToString());
             }
-            DataTable dt = dbHelper.ExecuteScalar(sql, out code, out msg);
+            DataTable dt = dbHelper.ExecuteScalar(sqlPage, out code, out msg);
             List<T> list = new List<T>();
             if (dt != null && dt.Rows.Count > 0)
             {
@@ -341,7 +352,6 @@ namespace Ideal.Ideal.DB.Base
             StringBuilder fields = new StringBuilder();
             //声明值
             StringBuilder values = new StringBuilder();
-            t.CreateTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
 
             foreach (PropertyInfo pro in t.GetType().GetProperties())
             {

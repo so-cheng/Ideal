@@ -73,6 +73,22 @@ namespace Ideal.Ideal.Model
 
         public object Data { get; set; }
 
+        private int m_pageSizee = 0;
+        public int PageIndex {
+            get
+            { return m_pageSizee; }
+            set
+            { m_pageSizee = value; }
+        }
+
+        private int m_pageSize = 10;
+        public int PageSize
+        {
+            get
+            { return m_pageSize; }
+            set
+            { m_pageSize = value; }
+        }
 
         public int Total { get; set; }
     }
