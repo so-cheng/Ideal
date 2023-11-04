@@ -90,8 +90,6 @@ namespace Ideal.Ideal.Model
         /// </summary>
         [DbFieldAttribute(DbFieldMode.NEVER_SAVE)]
         public ExecuteType ExecuteType { get; set; }
-        [DbFieldAttribute(DbFieldMode.NEVER_SAVE)]
-        public string UserID { get; set; }
 
     }
 }

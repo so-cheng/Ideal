@@ -114,7 +114,6 @@ namespace Ideal.Ideal.DB.Base
             sb.Append(") AS tempTable");
             sb.Append(string.Format("WHERE RowNum BETWEEN({0}-1)*{1}+{2} AND {3}*{4}", param.PageIndex, param.PageSize, param.PageIndex, param.PageIndex, param.PageSize));
             sb.Append("ORDER BY RowNum");
-
             string sqlCount = string.Format("select count(1) from ({0}) as T", sql);
             int page_start_index = (param.PageIndex - 1) * param.PageSize + 1;
             int page_start_end = param.PageIndex * param.PageSize;
