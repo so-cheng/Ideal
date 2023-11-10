@@ -569,6 +569,7 @@ namespace Ideal.Ideal.DB.Base
             {
                 value = TryEval<double>(dr, fieldName);
             }
+           
             return value;
         }
         /// <summary>
