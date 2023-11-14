@@ -24,6 +24,9 @@ namespace Ideal.Ideal.Common.SqlFilter
             }
             string str = sqlValue.ToString();
             str = str.Replace("\'", "\'\'");
+            if (string.IsNullOrEmpty(str)) {
+                return null;
+            }
             return str;
         }
 

@@ -99,7 +99,7 @@ namespace Ideal.Ideal.DB.Base
             {
                 body = param.SqlBody;
             }
-            if (string.IsNullOrEmpty(param.OrderField))  
+            if (string.IsNullOrEmpty(param.OrderField))
             {
                 param.OrderField = "CreateTime";
             }
@@ -278,6 +278,65 @@ namespace Ideal.Ideal.DB.Base
                 }
             }
             return list;
+        }
+        /// <summary>
+        /// DataTable转换T
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="dt"></param>
+        /// <returns></returns>
+        public static List<T> ConvertToEntityList<T>(DataTable dt)
+            where T : new()
+        {
+            List<T> list = new List<T>();
+            if (dt != null && dt.Rows.Count > 0)
+            {
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    DataRow dr = dt.Rows[i];
+                    T t = new T();
+
+                    foreach (PropertyInfo pro in t.GetType().GetProperties())
+                    {
+                        if (pro.CanWrite)
+                        {
+                            string fieldName = getFieldNameByProperty(pro);
+                            if (dt.Columns.Contains(fieldName))//排除不包含列的异常
+                            {
+                                pro.SetValue(t, object2Value(pro, dr, fieldName), null);
+                            }
+                        }
+                    }
+                    list.Add(t);
+                }
+            }
+            return list;
+        }
+
+        public static T ConvertToEntity<T>(DataTable dt)
+          where T : new()
+        {
+            T t = new T();
+            if (dt != null && dt.Rows.Count > 0)
+            {
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    DataRow dr = dt.Rows[i];
+                    t = new T();
+                    foreach (PropertyInfo pro in t.GetType().GetProperties())
+                    {
+                        if (pro.CanWrite)
+                        {
+                            string fieldName = getFieldNameByProperty(pro);
+                            if (dt.Columns.Contains(fieldName))//排除不包含列的异常
+                            {
+                                pro.SetValue(t, object2Value(pro, dr, fieldName), null);
+                            }
+                        }
+                    }
+                }
+            }
+            return t;
         }
         #endregion
 
@@ -569,7 +628,7 @@ namespace Ideal.Ideal.DB.Base
             {
                 value = TryEval<double>(dr, fieldName);
             }
-           
+
             return value;
         }
         /// <summary>

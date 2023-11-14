@@ -31,6 +31,10 @@ namespace Ideal.Ideal.DB
                 throw new ArgumentException("数据库连接字符串不能为空！");
             }
         }
+        public DbUtility()
+        {
+             
+        }
         /// <summary>
         /// 验证数据库是否可以连接
         /// </summary>
@@ -381,8 +385,12 @@ namespace Ideal.Ideal.DB
             return dt;
         }
 
+
+
         #endregion
         #region 私有方法
+
+
         #endregion
     }
 }
