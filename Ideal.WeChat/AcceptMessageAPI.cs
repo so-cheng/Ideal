@@ -1,4 +1,5 @@
 ﻿using Ideal.Ideal.Common.Enums;
+using Ideal.Ideal.WeChat.Helper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
