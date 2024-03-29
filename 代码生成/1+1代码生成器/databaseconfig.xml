@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <servers>
   <server>
-    <connectionstring>Data Source=192.168.10.101;User ID=pvtnm;Password=Pvtnm!123456;Initial Catalog=PVT_NotificationManage;</connectionstring>
+    <connectionstring>Data Source=.;User ID=sa;Password=111111;Initial Catalog=ideal_database;</connectionstring>
   </server>
 </servers>

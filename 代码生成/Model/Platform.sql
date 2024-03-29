@@ -294,3 +294,44 @@ create table Ideal_WeChatUser
    Creator              varchar(50)                    null,
    constraint PK_IDEAL_WECHATUSER primary key clustered (OpenID)
 );
+
+create table Shop_Order 
+(
+   OrderID              varchar(50)                    not null,
+   Name                 char(10)                       null,
+   Phone                char(11)                       null,
+   Address              char(100)                      null,
+   TrackingNum          varchar(50)                    null,
+   ShippingStatus       char(1)                        null,
+   SignStatus           char(1)                        null,
+   ProductName          char(100)                      null,
+   ProductPrice         numeric(10,2)                  null,
+   Freight              numeric(5,2)                   null,
+   ShippingTime         datetime                       null,
+   IsReturn             char(1)                        null,
+   Creator              varchar(50)                    null,
+   CreateTime           date                           null,
+   constraint PK_SHOP_ORDER primary key clustered (OrderID)
+);
+
+create table Shop_Client 
+(
+   ClientID             varchar(50)                    not null,
+   Name                 char(10)                       null,
+   Phone                char(11)                       null,
+   Creator              varchar(50)                    null,
+   CreateTime           date                           null,
+   constraint PK_SHOP_CLIENT primary key clustered (ClientID)
+);
+
+create table Ideal_SystemConfig 
+(
+   SystemConfigID       varchar(50)                    not null,
+   SystemName           varchar(50)                    null,
+   Title                nvarchar(100)                  null,
+   Intro                nvarchar(200)                  null,
+   VersionNumber        varchar(50)                    null,
+   SystemImage          varchar(max)                   null,
+   CreateTime           date                           null,
+   Creator              varchar(50)                    null
+);
